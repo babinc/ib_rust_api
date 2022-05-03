@@ -11,7 +11,7 @@ https://github.com/sparkstartconsulting/IBKR-API-Rust
 ## Examples
 Use any of the following examples included in the project to learn how to use the API.
 
-![](https://s3.us-west-2.amazonaws.com/carmanbabin.com/images/Screenshot+from+2022-05-03+13-03-16.png)
+![](https://s3.us-west-2.amazonaws.com/www.carmanbabin.com/images/Screenshot+from+2022-05-03+13-03-16.png)
 
 ## ToDo
  - Use the ``any`` trait for api parameters to avoid specific methods for each datatype
