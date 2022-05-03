@@ -1,0 +1,97 @@
+use crate::models::contract::Contract;
+use crate::models::tag_value::TagValue;
+
+#[derive(Debug)]
+pub struct ContractDetails {
+    pub contract: Contract,
+    pub market_name: String,
+    pub min_tick: f64,
+    pub order_types: String,
+    pub valid_exchanges: String,
+    pub price_magnifier: i32,
+    pub under_con_id: i32,
+    pub long_name: String,
+    pub contract_month: String,
+    pub industry: String,
+    pub category: String,
+    pub subcategory: String,
+    pub time_zone_id: String,
+    pub trading_hours: String,
+    pub liquid_hours: String,
+    pub ev_rule: String,
+    pub ev_multiplier: f64,
+    pub md_size_multiplier: i32,
+    pub agg_group: i32,
+    pub under_symbol: String,
+    pub under_sec_type: String,
+    pub market_rule_ids: String,
+    pub sec_id_list: Vec<TagValue>,
+    pub real_expiration_date: String,
+    pub last_trade_time: String,
+
+    // BOND values
+    pub cusip: String,
+    pub ratings: String,
+    pub desc_append: String,
+    pub bond_type: String,
+    pub coupon_type: String,
+    pub callable: bool,
+    pub putable: bool,
+    pub coupon: f64,
+    pub convertible: bool,
+    pub maturity: String,
+    pub issue_date: String,
+    pub next_option_date: String,
+    pub next_option_type: String,
+    pub next_option_partial: bool,
+    pub notes: String,
+}
+
+impl ContractDetails {
+    pub fn new() -> ContractDetails {
+        let contract = Contract::new();
+
+        ContractDetails {
+            contract,
+            market_name: "".to_string(),
+            min_tick: 0.0,
+            order_types: "".to_string(),
+            valid_exchanges: "".to_string(),
+            price_magnifier: 0,
+            under_con_id: 0,
+            long_name: "".to_string(),
+            contract_month: "".to_string(),
+            industry: "".to_string(),
+            category: "".to_string(),
+            subcategory: "".to_string(),
+            time_zone_id: "".to_string(),
+            trading_hours: "".to_string(),
+            liquid_hours: "".to_string(),
+            ev_rule: "".to_string(),
+            ev_multiplier: 0.0,
+            md_size_multiplier: 0,
+            agg_group: 0,
+            under_symbol: "".to_string(),
+            under_sec_type: "".to_string(),
+            market_rule_ids: "".to_string(),
+            sec_id_list: vec![],
+            real_expiration_date: "".to_string(),
+            last_trade_time: "".to_string(),
+            cusip: "".to_string(),
+            ratings: "".to_string(),
+            desc_append: "".to_string(),
+            bond_type: "".to_string(),
+            coupon_type: "".to_string(),
+            callable: false,
+            putable: false,
+            coupon: 0.0,
+            convertible: false,
+            maturity: "".to_string(),
+            issue_date: "".to_string(),
+            next_option_date: "".to_string(),
+            next_option_type: "".to_string(),
+            next_option_partial: false,
+            notes: "".to_string()
+        }
+    }
+}

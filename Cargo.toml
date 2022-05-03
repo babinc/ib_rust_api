@@ -1,0 +1,54 @@
+[package]
+name = "ib_rust_api"
+version = "0.1.3"
+authors = ["Carman Babin <CBabin@slb.com>"]
+edition = "2018"
+
+[[example]]
+name = "scanner"
+path = "src/examples/scanner.rs"
+
+[[example]]
+name = "history"
+path = "src/examples/historical_data.rs"
+
+[[example]]
+name = "real_time_bars"
+path = "src/examples/real_time_bars.rs"
+
+[[example]]
+name = "tick_by_tick"
+path = "src/examples/tick_by_tick.rs"
+
+[[example]]
+name = "place_order"
+path = "src/examples/place_order.rs"
+
+[[example]]
+name = "contract_details"
+path = "src/examples/contract_details.rs"
+
+[[example]]
+name = "acccount_info"
+path = "src/examples/account_info.rs"
+
+[[example]]
+name = "tick_generic"
+path = "src/examples/tick_generic.rs"
+
+[[example]]
+name = "pnl"
+path = "src/examples/pnl.rs"
+
+[dependencies]
+crossbeam-channel = "0.4"
+num = "0.2"
+num-derive = "0.3"
+num-traits = "0.2"
+rsevents = "0.2.1"
+regex = "1.3.9"
+chrono = "0.4.15"
+bytebuffer = "0.2.1"
+serde = "1.0.100"
+serde_derive = "1.0.100"
+serde_json = "1.0.40"
